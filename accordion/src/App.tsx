@@ -1,10 +1,9 @@
-import './App.css';
-import { Footer } from './Footer';
+import FaqBody from "./FaqBody";
 
 function App() {
   return (
     <div className="App">
-      <Footer />
+      <FaqBody />
     </div>
   );
 }

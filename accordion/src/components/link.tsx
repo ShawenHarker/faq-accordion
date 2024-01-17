@@ -1,19 +1,20 @@
+import { Link } from "@chakra-ui/react";
 import { colors } from "../themes";
 
 interface Links {
-    href: string
-    name: string
+  href: string;
+  name: string;
 }
 
-export default function Link({ href, name}: Links) {
-    return (
-      <a
-        rel="noreferrer"
-        href={href}
-        target="_blank"
-        style={{ color: colors.link, textDecoration: "none" }}
-      >
-        {name}
-      </a>
-    );
+export default function Anchor({ href, name }: Readonly<Links>) {
+  return (
+    <Link
+      rel="noreferrer"
+      href={href}
+      target="_blank"
+      style={{ color: colors.link, textDecoration: "none" }}
+    >
+      {name}
+    </Link>
+  );
 }

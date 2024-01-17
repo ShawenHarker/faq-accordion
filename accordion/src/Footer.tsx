@@ -1,12 +1,14 @@
-import Link from "./components/link";
+import Anchor from "./components/link";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <div style={{ fontSize: "11px", textAlign: "center" }}>
       Challenge by{" "}
-      <Link href="https://www.frontendmentor.io?ref=challenge" name="Frontend Mentor" />
+      <Anchor href="https://www.frontendmentor.io?ref=challenge" name="Frontend Mentor" />
       . Coded by{" "}
-      <Link href="https://github.com/ShawenHarker" name="Shawen Harker" />.
+      <Anchor href="https://github.com/ShawenHarker" name="Shawen Harker" />.
     </div>
   );
 };
+
+export default Footer;
