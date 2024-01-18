@@ -1,8 +1,8 @@
 import { Image } from "@chakra-ui/react";
 import image from "../../assets/images/background-pattern-mobile.svg";
 
-const DesktopImage = () => {
-  return <Image src={image} alt="desktop image" />;
+const MobileImage = () => {
+  return <Image src={image} alt="Mobile image" width="100%" />;
 };
 
-export default DesktopImage;
+export default MobileImage;
